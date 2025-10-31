@@ -24,6 +24,12 @@
 #include "IdEcoInterfaceBus1.h"
 #include "IdEcoFileSystemManagement1.h"
 #include "IdEcoLab1.h"
+#include "IdEcoCalculatorA.h"
+#include "IdEcoCalculatorB.h"
+#include "IdEcoCalculatorD.h"
+#include "IdEcoCalculatorE.h"
+#include "IEcoCalculatorX.h"
+#include "IEcoCalculatorY.h"
 
 /*
  *
@@ -66,8 +72,11 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
     char_t* copyName = 0;
     /* Указатель на тестируемый интерфейс */
     IEcoLab1* pIEcoLab1 = 0;
+	IEcoCalculatorX* pIX = 0;
+    IEcoCalculatorY* pIY = 0;
 
     int i, deg;
+	int32_t ans = 0;
 	clock_t start, end;
 	double elapsed1, elapsed2;
 	FILE* File1 = 0;
@@ -119,6 +128,16 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
     result = pIBus->pVTbl->QueryComponent(pIBus, &CID_EcoLab1, 0, &IID_IEcoLab1, (void**) &pIEcoLab1);
     if (result != 0 || pIEcoLab1 == 0) {
         /* Освобождение интерфейсов в случае ошибки */
+        goto Release;
+    }
+
+	result = pIEcoLab1->pVTbl->QueryInterface(pIEcoLab1, &IID_IEcoCalculatorX, (void**)&pIX);
+    if (result != 0 || pIX == 0) {
+        goto Release;
+    }
+
+    result = pIEcoLab1->pVTbl->QueryInterface(pIEcoLab1, &IID_IEcoCalculatorY, (void**)&pIY);
+    if (result != 0 || pIY == 0) {
         goto Release;
     }
 
@@ -283,6 +302,112 @@ int16_t EcoMain(IEcoUnknown* pIUnk) {
 		pIMem->pVTbl->Free(pIMem, y_fullLongDouble);
 		pIMem->pVTbl->Free(pIMem, y_shapeLongDouble);
 	}
+	printf("EcoLab2\n");
+
+	ans = pIX->pVTbl->Addition(pIX, 2, 7);
+	if (ans == 9) {
+		printf("IEcoCalculatorX::Addition(2, 7) = %d    [OK]\n", ans);
+	} else {
+		printf("IEcoCalculatorX::Addition(2, 7) = %d    [INCORRECT]\n", ans);
+	}
+
+	ans = pIX->pVTbl->Subtraction(pIX, 50, 20);
+	if (ans == 30) {
+		printf("IEcoCalculatorX::Subtraction(50, 20) = %d    [OK]\n", ans);
+	} else {
+		printf("IEcoCalculatorX::Subtraction(50, 20) = %d    [INCORRECT]\n", ans);
+	}
+
+	ans = pIY->pVTbl->Multiplication(pIY, 6, 8);
+	if (ans == 48) {
+		printf("IEcoCalculatorY::Multiplication(6, 8) = %d    [OK]\n", ans);
+	} else {
+		printf("IEcoCalculatorY::Multiplication(6, 8) = %d    [INCORRECT]\n", ans);
+	}
+
+	ans = pIY->pVTbl->Division(pIY, 99, 11);
+	if (ans == 9) {
+		printf("IEcoCalculatorY::Division(99, 11) = %d    [OK]\n", ans);
+	} else {
+		printf("IEcoCalculatorY::Division(99, 11) = %d    [INCORRECT]\n", ans);
+	}
+
+	pIX->pVTbl->Release(pIX);
+	pIY->pVTbl->Release(pIY);
+
+	result = pIEcoLab1->pVTbl->QueryInterface(pIEcoLab1, &IID_IEcoCalculatorX, (void**)&pIX);
+	if (result == 0) {
+		pIX->pVTbl->Release(pIX);
+		printf("Check: IEcoLab1 -> IEcoCalculatorX  [accessible]\n");
+	} else {
+		printf("Check: IEcoLab1 -> IEcoCalculatorX  [missing] (code=%d)\n", result);
+	}
+
+	result = pIEcoLab1->pVTbl->QueryInterface(pIEcoLab1, &IID_IEcoCalculatorY, (void**)&pIY);
+	if (result == 0) {
+		pIY->pVTbl->Release(pIY);
+		printf("Check: IEcoLab1 -> IEcoCalculatorY  [accessible]\n");
+	} else {
+		printf("Check: IEcoLab1 -> IEcoCalculatorY  [missing] (code=%d)\n", result);
+	}
+
+	result = pIEcoLab1->pVTbl->QueryInterface(pIEcoLab1, &IID_IEcoLab1, (void**)&pIEcoLab1);
+	if (result == 0) {
+		pIEcoLab1->pVTbl->Release(pIEcoLab1);
+		printf("Check: IEcoLab1 -> IEcoLab1  [accessible]\n");
+	} else {
+		printf("Check: IEcoLab1 -> IEcoLab1  [missing] (code=%d)\n", result);
+	}
+
+	result = pIX->pVTbl->QueryInterface(pIX, &IID_IEcoCalculatorY, (void**)&pIY);
+	if (result == 0) {
+		pIY->pVTbl->Release(pIY);
+		printf("Check: IEcoCalculatorX -> IEcoCalculatorY  [accessible]\n");
+	} else {
+		printf("Check: IEcoCalculatorX -> IEcoCalculatorY  [missing] (code=%d)\n", result);
+	}
+
+	result = pIX->pVTbl->QueryInterface(pIX, &IID_IEcoLab1, (void**)&pIEcoLab1);
+	if (result == 0) {
+		pIEcoLab1->pVTbl->Release(pIEcoLab1);
+		printf("Check: IEcoCalculatorX -> IEcoLab1  [accessible]\n");
+	} else {
+		printf("Check: IEcoCalculatorX -> IEcoLab1  [missing] (code=%d)\n", result);
+	}
+
+	result = pIX->pVTbl->QueryInterface(pIX, &IID_IEcoCalculatorX, (void**)&pIX);
+	if (result == 0) {
+		pIX->pVTbl->Release(pIX);
+		printf("Check: IEcoCalculatorX -> IEcoCalculatorX  [accessible]\n");
+	} else {
+		printf("Check: IEcoCalculatorX -> IEcoCalculatorX  [missing] (code=%d)\n", result);
+	}
+
+	result = pIY->pVTbl->QueryInterface(pIY, &IID_IEcoCalculatorX, (void**)&pIX);
+	if (result == 0) {
+		pIX->pVTbl->Release(pIX);
+		printf("Check: IEcoCalculatorY -> IEcoCalculatorX  [accessible]\n");
+	} else {
+		printf("Check: IEcoCalculatorY -> IEcoCalculatorX  [missing] (code=%d)\n", result);
+	}
+
+	result = pIY->pVTbl->QueryInterface(pIY, &IID_IEcoCalculatorY, (void**)&pIY);
+	if (result == 0) {
+		pIY->pVTbl->Release(pIY);
+		printf("Check: IEcoCalculatorY -> IEcoCalculatorY  [accessible]\n");
+	} else {
+		printf("Check: IEcoCalculatorY -> IEcoCalculatorY  [missing] (code=%d)\n", result);
+	}
+
+	result = pIY->pVTbl->QueryInterface(pIY, &IID_IEcoLab1, (void**)&pIEcoLab1);
+	if (result == 0) {
+		pIEcoLab1->pVTbl->Release(pIEcoLab1);
+		printf("Check: IEcoCalculatorY -> IEcoLab1  [accessible]\n");
+	} else {
+		printf("Check: IEcoCalculatorY -> IEcoLab1  [missing] (code=%d)\n", result);
+	}
+
+	getchar();
 
 	fclose(File1);
 	fclose(File2);

@@ -1,0 +1,7 @@
+﻿  CEcoLab1.c
+D:\Projects\C\eco_lab_1\HeaderFiles\CEcoLab1.h(26): fatal error C1083: Cannot open include file: 'IEcoCalculatorX.h': No such file or directory
+  CEcoLab1ConnectionPoint.c
+  CEcoLab1EnumConnectionPoints.c
+  CEcoLab1EnumConnections.c
+  CEcoLab1Factory.c
+D:\Projects\C\eco_lab_1\HeaderFiles\CEcoLab1.h(26): fatal error C1083: Cannot open include file: 'IEcoCalculatorX.h': No such file or directory

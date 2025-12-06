@@ -1,0 +1,194 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\C\\eco_lab_1\\AssemblyFiles\\Windows\\VisualStudio_10\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C5C7411B-A740-483B-B248-C0ACBFF51101}|Eco.Lab1UnitTest.vcxproj|D:\\Projects\\C\\eco_lab_1\\UnitTestFiles\\SourceFiles\\CEcoLab1Sink.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5C7411B-A740-483B-B248-C0ACBFF51101}|Eco.Lab1UnitTest.vcxproj|D:\\Projects\\C\\eco_lab_1\\UnitTestFiles\\SourceFiles\\EcoLab1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36718CB1-20CF-4A46-A920-E579213DD062}|Eco.Lab1.vcxproj|D:\\Projects\\C\\eco_lab_1\\SourceFiles\\CEcoLab1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36718CB1-20CF-4A46-A920-E579213DD062}|Eco.Lab1.vcxproj|D:\\Projects\\C\\eco_lab_1\\HeaderFiles\\CEcoLab1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36718CB1-20CF-4A46-A920-E579213DD062}|Eco.Lab1.vcxproj|D:\\Projects\\C\\eco_lab_1\\HeaderFiles\\CEcoLab1Factory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36718CB1-20CF-4A46-A920-E579213DD062}|Eco.Lab1.vcxproj|D:\\Projects\\C\\eco_lab_1\\SharedFiles\\IdEcoLab1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36718CB1-20CF-4A46-A920-E579213DD062}|Eco.Lab1.vcxproj|D:\\Projects\\C\\eco_lab_1\\SharedFiles\\IEcoLab1Events.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5C7411B-A740-483B-B248-C0ACBFF51101}|Eco.Lab1UnitTest.vcxproj|D:\\Projects\\C\\eco_lab_1\\UnitTestFiles\\HeaderFiles\\CEcoLab1Sink.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5C7411B-A740-483B-B248-C0ACBFF51101}|Eco.Lab1UnitTest.vcxproj|D:\\Projects\\C\\eco_lab_1\\UnitTestFiles\\HeaderFiles\\CEcoLab1Sink2.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36718CB1-20CF-4A46-A920-E579213DD062}|Eco.Lab1.vcxproj|D:\\Projects\\C\\eco_lab_1\\HeaderFiles\\CEcoLab1EnumConnections.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36718CB1-20CF-4A46-A920-E579213DD062}|Eco.Lab1.vcxproj|D:\\Projects\\C\\eco_lab_1\\HeaderFiles\\CEcoLab1ConnectionPoint.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EcoLab1.c",
+              "DocumentMoniker": "D:\\Projects\\C\\eco_lab_1\\UnitTestFiles\\SourceFiles\\EcoLab1.c",
+              "RelativeDocumentMoniker": "..\\..\\..\\UnitTestFiles\\SourceFiles\\EcoLab1.c",
+              "ToolTip": "D:\\Projects\\C\\eco_lab_1\\UnitTestFiles\\SourceFiles\\EcoLab1.c",
+              "RelativeToolTip": "..\\..\\..\\UnitTestFiles\\SourceFiles\\EcoLab1.c",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAAJ4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-11-26T14:50:35.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CEcoLab1Factory.h",
+              "DocumentMoniker": "D:\\Projects\\C\\eco_lab_1\\HeaderFiles\\CEcoLab1Factory.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\HeaderFiles\\CEcoLab1Factory.h",
+              "ToolTip": "D:\\Projects\\C\\eco_lab_1\\HeaderFiles\\CEcoLab1Factory.h",
+              "RelativeToolTip": "..\\..\\..\\HeaderFiles\\CEcoLab1Factory.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-26T14:03:07.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CEcoLab1Sink.c",
+              "DocumentMoniker": "D:\\Projects\\C\\eco_lab_1\\UnitTestFiles\\SourceFiles\\CEcoLab1Sink.c",
+              "RelativeDocumentMoniker": "..\\..\\..\\UnitTestFiles\\SourceFiles\\CEcoLab1Sink.c",
+              "ToolTip": "D:\\Projects\\C\\eco_lab_1\\UnitTestFiles\\SourceFiles\\CEcoLab1Sink.c",
+              "RelativeToolTip": "..\\..\\..\\UnitTestFiles\\SourceFiles\\CEcoLab1Sink.c",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAAAHwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-11-26T14:00:15.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CEcoLab1Sink2.h",
+              "DocumentMoniker": "D:\\Projects\\C\\eco_lab_1\\UnitTestFiles\\HeaderFiles\\CEcoLab1Sink2.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\UnitTestFiles\\HeaderFiles\\CEcoLab1Sink2.h",
+              "ToolTip": "D:\\Projects\\C\\eco_lab_1\\UnitTestFiles\\HeaderFiles\\CEcoLab1Sink2.h",
+              "RelativeToolTip": "..\\..\\..\\UnitTestFiles\\HeaderFiles\\CEcoLab1Sink2.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-26T14:00:04.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CEcoLab1Sink.h",
+              "DocumentMoniker": "D:\\Projects\\C\\eco_lab_1\\UnitTestFiles\\HeaderFiles\\CEcoLab1Sink.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\UnitTestFiles\\HeaderFiles\\CEcoLab1Sink.h",
+              "ToolTip": "D:\\Projects\\C\\eco_lab_1\\UnitTestFiles\\HeaderFiles\\CEcoLab1Sink.h",
+              "RelativeToolTip": "..\\..\\..\\UnitTestFiles\\HeaderFiles\\CEcoLab1Sink.h",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-26T14:00:00.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CEcoLab1.h",
+              "DocumentMoniker": "D:\\Projects\\C\\eco_lab_1\\HeaderFiles\\CEcoLab1.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\HeaderFiles\\CEcoLab1.h",
+              "ToolTip": "D:\\Projects\\C\\eco_lab_1\\HeaderFiles\\CEcoLab1.h",
+              "RelativeToolTip": "..\\..\\..\\HeaderFiles\\CEcoLab1.h",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-26T10:45:48.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CEcoLab1.c",
+              "DocumentMoniker": "D:\\Projects\\C\\eco_lab_1\\SourceFiles\\CEcoLab1.c",
+              "RelativeDocumentMoniker": "..\\..\\..\\SourceFiles\\CEcoLab1.c",
+              "ToolTip": "D:\\Projects\\C\\eco_lab_1\\SourceFiles\\CEcoLab1.c",
+              "RelativeToolTip": "..\\..\\..\\SourceFiles\\CEcoLab1.c",
+              "ViewState": "AgIAANEDAAAAAAAAAAAAAKkDAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-11-26T10:15:01.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IdEcoLab1.h",
+              "DocumentMoniker": "D:\\Projects\\C\\eco_lab_1\\SharedFiles\\IdEcoLab1.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\SharedFiles\\IdEcoLab1.h",
+              "ToolTip": "D:\\Projects\\C\\eco_lab_1\\SharedFiles\\IdEcoLab1.h",
+              "RelativeToolTip": "..\\..\\..\\SharedFiles\\IdEcoLab1.h",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-26T10:14:58.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IEcoLab1Events.h",
+              "DocumentMoniker": "D:\\Projects\\C\\eco_lab_1\\SharedFiles\\IEcoLab1Events.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\SharedFiles\\IEcoLab1Events.h",
+              "ToolTip": "D:\\Projects\\C\\eco_lab_1\\SharedFiles\\IEcoLab1Events.h",
+              "RelativeToolTip": "..\\..\\..\\SharedFiles\\IEcoLab1Events.h",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAC4AAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-26T10:12:10.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CEcoLab1EnumConnections.h",
+              "DocumentMoniker": "D:\\Projects\\C\\eco_lab_1\\HeaderFiles\\CEcoLab1EnumConnections.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\HeaderFiles\\CEcoLab1EnumConnections.h",
+              "ToolTip": "D:\\Projects\\C\\eco_lab_1\\HeaderFiles\\CEcoLab1EnumConnections.h",
+              "RelativeToolTip": "..\\..\\..\\HeaderFiles\\CEcoLab1EnumConnections.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-26T10:12:06.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CEcoLab1ConnectionPoint.h",
+              "DocumentMoniker": "D:\\Projects\\C\\eco_lab_1\\HeaderFiles\\CEcoLab1ConnectionPoint.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\HeaderFiles\\CEcoLab1ConnectionPoint.h",
+              "ToolTip": "D:\\Projects\\C\\eco_lab_1\\HeaderFiles\\CEcoLab1ConnectionPoint.h",
+              "RelativeToolTip": "..\\..\\..\\HeaderFiles\\CEcoLab1ConnectionPoint.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-26T10:01:35.369Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

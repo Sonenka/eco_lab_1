@@ -21,6 +21,9 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBF0}</UniqueIdentifier>
       <Extensions>pdf;doc;docx;vsd;vsdx;txt</Extensions>
     </Filter>
+    <Filter Include="Calculators">
+      <UniqueIdentifier>{376302ce-6643-4a0b-b935-29f321a42981}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\HeaderFiles\CEcoLab1.h">
@@ -35,12 +38,66 @@
     <ClInclude Include="..\..\..\SharedFiles\IEcoLab1.h">
       <Filter>Shared Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\HeaderFiles\CEcoLab1ConnectionPoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\HeaderFiles\CEcoLab1EnumConnectionPoints.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\HeaderFiles\CEcoLab1EnumConnections.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SharedFiles\IEcoConnectionPoint.h">
+      <Filter>Shared Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SharedFiles\IEcoConnectionPointContainer.h">
+      <Filter>Shared Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SharedFiles\IEcoEnumConnectionPoints.h">
+      <Filter>Shared Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SharedFiles\IEcoEnumConnections.h">
+      <Filter>Shared Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SharedFiles\IEcoLab1Events.h">
+      <Filter>Shared Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\SharedFiles\IdEcoCalculatorA.h">
+      <Filter>Calculators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\SharedFiles\IdEcoCalculatorB.h">
+      <Filter>Calculators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\SharedFiles\IdEcoCalculatorC.h">
+      <Filter>Calculators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\SharedFiles\IdEcoCalculatorD.h">
+      <Filter>Calculators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\SharedFiles\IdEcoCalculatorE.h">
+      <Filter>Calculators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\SharedFiles\IEcoCalculatorX.h">
+      <Filter>Calculators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\SharedFiles\IEcoCalculatorY.h">
+      <Filter>Calculators</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\SourceFiles\CEcoLab1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\SourceFiles\CEcoLab1Factory.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceFiles\CEcoLab1ConnectionPoint.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceFiles\CEcoLab1EnumConnectionPoints.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceFiles\CEcoLab1EnumConnections.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
